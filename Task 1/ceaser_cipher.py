@@ -43,10 +43,10 @@ print("*** CAESAR CIPHER PROGRAM ***")
 print()
 
 print("Do you want to encrypt or decrypt?")
-user_input = input("en/de: ").lower()
+user_input = input("hide/see: ").lower()
 print()
 
-if user_input == "en":
+if user_input == "hide":
     print("ENCRYPTION MODE SELECTED")
     print()
     key = int(input("Enter the key (1 through 26): "))
@@ -54,7 +54,7 @@ if user_input == "en":
     ciphertext = encrypt(text, key)
     print(f'CIPHERTEXT: {ciphertext}')
 
-elif user_input == "de":
+elif user_input == "see":
     print("DECRYPTION MODE SELECTED")
     print()
     key = int(input("Enter the key (1 through 26): "))
